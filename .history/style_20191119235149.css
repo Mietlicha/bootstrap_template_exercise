@@ -176,8 +176,8 @@ min-height: 70vh;
 }
 
 #contact >p{
-    max-width: 700px;
-    margin: 1rem auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 @media (min-width: 500px){
