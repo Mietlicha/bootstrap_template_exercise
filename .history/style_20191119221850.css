@@ -123,28 +123,15 @@ min-height: 70vh;
 #client .foto{
     min-width: 100px;
     min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
     border-radius: 50%;
     background-color: var(--main-colour);
 }
 
 #client blockquote p::before{
-    content: "\f10e ";
-    font-family: FontAwesome;
-    color: var(--main-colour);
-    padding-right: 0.5rem;
+    content: "\f13c";
+    font-family: Font Awesome;
 }
 
-.client__blockquote-hr{
-    border: 0.5px solid var(--main-colour);
-    width: 100%;
-}
-
-
-#client blockquote p{
-    font-size: 0.7rem;
-}
 
 @media (min-width: 500px){
     :root{

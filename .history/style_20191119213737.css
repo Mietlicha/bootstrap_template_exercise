@@ -7,10 +7,6 @@ body{
     position: relative;
 }
 
-section:not(#home){
-    padding-top: 70px;
-}
-
 /************************NAV******************************************/
 .bg-dark {
     background-color: #0a0a0a60!important;
@@ -95,10 +91,6 @@ text-transform: uppercase;
 }
 
 /************************Resources******************************************/
-#resources{
-min-height: 70vh;
-}
-
 #resources h5{
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -106,44 +98,7 @@ min-height: 70vh;
 
 #resources i{
     color: var(--main-colour);
-    font-size: 4rem;
-}
-
-#resources hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
-}
-
-/************************Clients******************************************/
-.client__main-hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
-}
-
-#client .foto{
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-    background-color: var(--main-colour);
-}
-
-#client blockquote p::before{
-    content: "\f10e ";
-    font-family: FontAwesome;
-    color: var(--main-colour);
-    padding-right: 0.5rem;
-}
-
-.client__blockquote-hr{
-    border: 0.5px solid var(--main-colour);
-    width: 100%;
-}
-
-
-#client blockquote p{
-    font-size: 0.7rem;
+    font-size: 2rem;
 }
 
 @media (min-width: 500px){

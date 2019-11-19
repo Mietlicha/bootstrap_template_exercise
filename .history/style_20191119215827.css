@@ -7,7 +7,7 @@ body{
     position: relative;
 }
 
-section:not(#home){
+section{
     padding-top: 70px;
 }
 
@@ -112,38 +112,6 @@ min-height: 70vh;
 #resources hr{
     width: 5%;
     border: 2px solid var(--main-colour);
-}
-
-/************************Clients******************************************/
-.client__main-hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
-}
-
-#client .foto{
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-    background-color: var(--main-colour);
-}
-
-#client blockquote p::before{
-    content: "\f10e ";
-    font-family: FontAwesome;
-    color: var(--main-colour);
-    padding-right: 0.5rem;
-}
-
-.client__blockquote-hr{
-    border: 0.5px solid var(--main-colour);
-    width: 100%;
-}
-
-
-#client blockquote p{
-    font-size: 0.7rem;
 }
 
 @media (min-width: 500px){
