@@ -1,0 +1,12 @@
+body{
+    position: relative;
+}
+
+/************************NAV******************************************/
+#main-nav {
+font-size: 1.5rem;
+}
+
+#main-nav navbar-brand{
+    font-size: 7rem;
+    }

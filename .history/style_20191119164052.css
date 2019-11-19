@@ -37,17 +37,10 @@ text-transform: uppercase;
     font-weight: bold;
 }
 
-
-
-.navbar-dark .navbar-nav .nav-link{
-    padding-top: .9rem;
-}
-
 /*Nav*/
 @media (min-width: 768px){
 .navbar-expand-md .navbar-nav .nav-link {
     padding-right: .9rem;
     padding-left: .9rem;
-    padding-top: 0;
 }
 }

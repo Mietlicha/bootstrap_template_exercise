@@ -1,0 +1,20 @@
+body{
+    position: relative;
+}
+
+/************************NAV******************************************/
+bg-dark{
+color: rgba(0, 0, 0, 0.747);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(160, 7, 7);
+}
+
+#main-nav {
+font-size: 1.2rem;
+}
+
+#main-nav .navbar-brand{
+    font-size: 2rem;
+}
