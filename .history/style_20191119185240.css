@@ -7,8 +7,8 @@ body{
 }
 
 /************************NAV******************************************/
-.bg-dark {
-    background-color: #0a0a0a60!important;
+bg-dark{
+color: rgba(0, 0, 0, 0.747);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -51,25 +51,16 @@ text-transform: uppercase;
 
 /************************Home******************************************/
 .home--landing-page{
-    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
+    background: url(img/tlo.jpg) center/cover no-repeat;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .home--caption{
     width: 100%;
     position: absolute;
     top: 40%;
+    /* right: 50%; */
+    transform: translateY(-50%, -50%);
     z-index: 3;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.home--caption h1{
-    font-size: 4rem;
-}
-
-.home--caption h1::first-letter, .home--caption h3::first-letter{
-    color: var(--main-colour);
 }
