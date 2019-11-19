@@ -1,6 +1,6 @@
 :root{
 --main-colour: rgb(53, 181, 240);
-font-size: 14px;
+font-size: 12px;
 }
 
 body{
@@ -41,11 +41,19 @@ text-transform: uppercase;
     padding-top: .9rem;
 }
 
-/************************Home******************************************/
-#home{
-    position: relative;
+/*Nav*/
+@media (min-width: 768px){
+    :root{
+        font-size: 16px;
+    }
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .9rem;
+    padding-left: .9rem;
+    padding-top: 0;
+}
 }
 
+/************************Home******************************************/
 .home--landing-page{
     background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
     width: 100vw;
@@ -54,7 +62,7 @@ text-transform: uppercase;
 
 .home--caption{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 40%;
     z-index: 3;
     text-align: center;
@@ -74,32 +82,3 @@ text-transform: uppercase;
 #course .btn{
     background-color: var(--main-colour);
 }
-
-/************************Feature******************************************/
-#feature hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
-}
-
-#feature i{
-    color: var(--main-colour);
-    font-size: 2rem;
-}
-
-#feature .feature-item h5, #feature header{
-    text-transform: uppercase;
-}
-
-@media (min-width: 500px){
-    :root{
-        font-size: 16px;
-    }
-    }
-    
-    @media (min-width: 768px){
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: .9rem;
-        padding-left: .9rem;
-        padding-top: 0;
-    }
-    }

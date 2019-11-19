@@ -41,6 +41,20 @@ text-transform: uppercase;
     padding-top: .9rem;
 }
 
+/*Nav*/
+@media (min-width: 500px){
+:root{
+    font-size: 16px;
+}
+
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .9rem;
+    padding-left: .9rem;
+    padding-top: 0;
+}
+}
+
 /************************Home******************************************/
 #home{
     position: relative;
@@ -83,23 +97,8 @@ text-transform: uppercase;
 
 #feature i{
     color: var(--main-colour);
-    font-size: 2rem;
 }
 
 #feature .feature-item h5, #feature header{
     text-transform: uppercase;
 }
-
-@media (min-width: 500px){
-    :root{
-        font-size: 16px;
-    }
-    }
-    
-    @media (min-width: 768px){
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: .9rem;
-        padding-left: .9rem;
-        padding-top: 0;
-    }
-    }

@@ -50,6 +50,7 @@ text-transform: uppercase;
     background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
     width: 100vw;
     height: 90vh;
+    position: fixed;
 }
 
 .home--caption{
