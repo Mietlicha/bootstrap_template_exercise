@@ -99,7 +99,6 @@ text-transform: uppercase;
 #resources{
 min-height: 70vh;
 background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center / cover;
-background-attachment: fixed;
 }
 
 #resources .resource--caption{

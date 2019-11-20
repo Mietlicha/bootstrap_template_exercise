@@ -52,17 +52,21 @@ text-transform: uppercase;
 
 /************************Home******************************************/
 #home{
+    position: relative;
+}
+
+.home--landing-page{
     background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
-    background-attachment: fixed;
     width: 100vw;
     height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
 
 .home--caption{
     width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
@@ -98,12 +102,6 @@ text-transform: uppercase;
 /************************Resources******************************************/
 #resources{
 min-height: 70vh;
-background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center / cover;
-background-attachment: fixed;
-}
-
-#resources .resource--caption{
-    color: #fff;
 }
 
 #resources h5{
@@ -119,6 +117,10 @@ background-attachment: fixed;
 #resources hr{
     width: 5%;
     border: 2px solid var(--main-colour);
+}
+
+#resourses fixed{
+    background: url(img/tlo.jpg);
 }
 
 /************************Clients******************************************/

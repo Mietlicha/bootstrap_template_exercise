@@ -58,7 +58,7 @@ text-transform: uppercase;
     height: 90vh;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
 .home--caption{
@@ -98,12 +98,7 @@ text-transform: uppercase;
 /************************Resources******************************************/
 #resources{
 min-height: 70vh;
-background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center / cover;
-background-attachment: fixed;
-}
-
-#resources .resource--caption{
-    color: #fff;
+background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center fixed / cover;
 }
 
 #resources h5{
@@ -119,6 +114,11 @@ background-attachment: fixed;
 #resources hr{
     width: 5%;
     border: 2px solid var(--main-colour);
+}
+
+#resourses .fixed{
+    background: url(img/feature.jpg);
+    /* height: 10vh; */
 }
 
 /************************Clients******************************************/

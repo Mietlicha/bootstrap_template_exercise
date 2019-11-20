@@ -52,17 +52,26 @@ text-transform: uppercase;
 
 /************************Home******************************************/
 #home{
+    /* position: relative; */
     background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
     background-attachment: fixed;
     width: 100vw;
     height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
+
+/* .home--landing-page{
+    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 90vh;
+} */
 
 .home--caption{
     width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
@@ -98,12 +107,29 @@ text-transform: uppercase;
 /************************Resources******************************************/
 #resources{
 min-height: 70vh;
-background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center / cover;
-background-attachment: fixed;
+/* position: relative; */
+/* background-attachment: fixed; */
+background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) no-repeat center fixed / cover;
 }
 
-#resources .resource--caption{
+/* #resources .bcg{ */
+    /* position: absolute;
+    /* top:0;
+    right: 0; */
+    /* width: 100%;
+    height: 70vh;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
+}
+
+#resourdes .resource--caption{
+    /* width: 100%;*/
+    position: absolute;
+    /*top: 40%;
+    /* z-index: 3; */
+    /* text-align: center;
     color: #fff;
+    text-transform: uppercase; */ 
 }
 
 #resources h5{
@@ -119,6 +145,11 @@ background-attachment: fixed;
 #resources hr{
     width: 5%;
     border: 2px solid var(--main-colour);
+}
+
+#resourses .fixed{
+    background: url(img/feature.jpg);
+    /* height: 10vh; */
 }
 
 /************************Clients******************************************/
