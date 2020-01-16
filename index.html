@@ -1,182 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Botany Site</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            $('.bg-dark').css({ opacity: '1' });
+          } else {
+            $('.bg-dark').css({ opacity: '0.5' });
+          }
+        });
+      });
+    </script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap template</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body data-spy="scroll" data-target="#main-nav">
+  <body data-spy="scroll" data-target="#main-nav">
     <!--------------------nav/home-------------------------------------------------------------------->
-    <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark font-weight-bold fixed-top">
-        <a class="navbar-brand" href="#"><i class="fa fa-grav mr-2" aria-hidden="true"></i>Nuno</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav
+      id="main-nav"
+      class="navbar navbar-expand-md navbar-dark bg-dark font-weight-bold fixed-top"
+    >
+      <a class="navbar-brand font-weight-light" href="#"
+        ><i class="fa fa-pagelines mr-4" aria-hidden="true"></i>Botany</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#course">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#feature">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#resources">Resorses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#client">Client</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#course">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#client">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-<!--------------------main----------------------------------------------------------------->
-<main>
-    <!--------------------home-------------------->
-    <section id="home">
+    <!--------------------main----------------------------------------------------------------->
+    <main>
+      <!--------------------home-------------------->
+      <section id="home">
         <div class="home--caption">
-            <h1>Welcome to Nuno</h1>
-            <h3>Udemy bootstrap course</h3>
+          <h1>Welcome to botany</h1>
+          <h3>plant science</h3>
         </div>
-    </section>
+      </section>
 
-    <!--------------------corse-------------------->
-    <section id="course" class="container text-center mt-5 mb-5">
+      <!--------------------feature-------------------->
+      <section id="feature">
+        <div class="jumbotron jumbotron-fluid text-center pt-5">
+          <header><h3 class="text-uppercase">features</h3></header>
+          <hr class="client__main-hr mb-5 mt-3" />
+          <div class="container d-md-flex">
+            <div class="feature-item col-md-4">
+              <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+              <h5 class="pt-3">custom animation</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+                qui autem vitae?
+              </p>
+            </div>
+            <div class="feature-item col-md-4">
+              <i class="fa fa-asterisk" aria-hidden="true"></i>
+              <h5 class="pt-3">custom animation</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+                qui autem vitae?
+              </p>
+            </div>
+            <div class="feature-item col-md-4">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <h5 class="pt-3">custom animation</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+                qui autem vitae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------corse-------------------->
+      <section id="course" class="container text-center mt-5 mb-5">
         <header><h3>Nuno Theme Advanced Bootstrap Course</h3></header>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit suscipit, repudiandae 
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+          suscipit, repudiandae
         </p>
         <a href="#" class="btn btn-md" target="_blnk">93% off coupon card</a>
-    </section>
-    <!--------------------feature-------------------->
-    <section id="feature">
-        <div class="jumbotron jumbotron-fluid text-center pt-5">
-            <header><h3>features</h3></header>
-            <hr>
-            <div class="container d-md-flex">
-                <div class="feature-item col-md-4">
-                    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-                    <h5 class="pt-3">custom animation</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui autem vitae?</p>
-                </div>
-                <div class="feature-item col-md-4">
-                        <i class="fa fa-asterisk" aria-hidden="true"></i>
-                        <h5 class="pt-3">custom animation</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui autem vitae?</p>
-                </div>
-                <div class="feature-item col-md-4">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <h5 class="pt-3">custom animation</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui autem vitae?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--------------------Resourses-------------------->
-    <section id="resources">
-        <div class="resource--caption">
-            <header><h3 class="text-center">Build with care</h3></header>
-            <hr>
-            <div class="container d-md-flex text-center">
-                <div class="resources-item col-md-4">
-                    <h5 class="pt-3">Html 5</h5>
-                    <i class="fa fa-html5" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit,</p>
-                </div>
-                <div class="resources-item col-md-4">
-                    <h5 class="pt-3">Bootstrap 4</h5>
-                    <i class="fa fa-bold" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit,</p>
-                </div>
-                <div class="resources-item col-md-4">
-                    <h5 class="pt-3">CSS 3</h5>
-                    <i class="fa fa-css3" aria-hidden="true"></i>
-                    <p>Lorem ipsum dolor sit,</p>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <!--------------------Client-------------------->
-    <section id="client">
-        <section class="jumbotron jumbotron-fluid text-center pt-5">
-            <header><h3>Clients</h3></header>
-            <div class="client-item">
-                <hr class="client__main-hr mb-5">
-                <div class="container d-md-flex">
-                    <div class="client-item col-md-6 d-flex">
-                        <div class="foto mr-5"></div>
-                        <blockquote class="blockquote">
-                            <p class="mb-0 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni in libero consequatur molestiae, dignissimos explicabo eveniet odit quam repellat nam facere cum quisquam, provident doloremque error sunt doloribus, hic nesciunt?</p>
-                            <hr class="client__blockquote-hr text-left">
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                    <div class="client-item col-md-6 d-flex mt-4 mt-md-0">
-                        <div class="foto mr-5"></div>
-                        <blockquote class="blockquote">
-                            <p class="mb-0 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni in libero consequatur molestiae, dignissimos explicabo eveniet odit quam repellat nam facere cum quisquam, provident doloremque error sunt doloribus, hic nesciunt?</p>
-                            <hr class="client__blockquote-hr text-left">
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>    
-        <aside class="text-center">
-            <a class="btn btn-md" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">click to see more</a>
-            <p class="collapse" id="collapseExample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, molestiae.</p>
-        </aside>
-    </section>
-    <!--------------------footer-------------------->
-    <footer id="contact" class="text-center mt-5 pt-5 pb-5">
-        <i class="fa fa-grav mr-2" aria-hidden="true"></i>
-        </p><p class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia porro reiciendis est odio id consequatur temporibus, culpa voluptas blanditiis dicta quis. Aspernatur voluptate ullam officia, saepe sequi voluptatem illum placeat.</p>
-        <address>
-            <p>
-            Anna Kubiak<br>
-            Stysia 41<br>
-            Wrocław 303<br>
-            </p>
-        </address>
-        <div class="socials d-flex justify-content-center">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            <i class="fa fa-youtube-square" aria-hidden="true"></i>
-        </div>
-        <hr>
-        <small>copyright &copy; Anna Kubiak 2019</small>
-    </footer>
-</main>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+      <!--------------------Resourses-------------------->
+      <section id="resources">
+        <div class="resource--caption">
+          <header><h3 class="text-center">Build with care</h3></header>
+          <hr />
+          <div class="container d-md-flex text-center">
+            <div class="resources-item col-md-4">
+              <h5 class="pt-3">Html 5</h5>
+              <i class="fa fa-html5" aria-hidden="true"></i>
+              <p>Lorem ipsum dolor sit,</p>
+            </div>
+            <div class="resources-item col-md-4">
+              <h5 class="pt-3">Bootstrap 4</h5>
+              <i class="fa fa-bold" aria-hidden="true"></i>
+              <p>Lorem ipsum dolor sit,</p>
+            </div>
+            <div class="resources-item col-md-4">
+              <h5 class="pt-3">CSS 3</h5>
+              <i class="fa fa-css3" aria-hidden="true"></i>
+              <p>Lorem ipsum dolor sit,</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------Client-------------------->
+      <section id="client">
+        <div class="jumbotron jumbotron-fluid text-center pt-5">
+          <header><h3 class="text-uppercase">Clients</h3></header>
+          <div class="client mx-auto">
+            <hr class="client__main-hr mb-5 mt-3" />
+            <div class="container py-3 d-md-flex text-center">
+              <div class="client-item col-md-6 d-flex">
+                <div class="foto foto-1 mr-5"></div>
+                <blockquote class="blockquote">
+                  <p class="mb-0 text-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Magni in libero consequatur
+                    molestiae, dignissimos explicabo eveniet odit quam repellat
+                    nam facere cum quisquam, provident doloremque error sunt
+                    doloribus, hic nesciunt?
+                  </p>
+                  <hr class="client__blockquote-hr text-left" />
+                  <footer class="blockquote-footer">
+                    Head of
+                    <cite title="Bio Farm Opole">BIO</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div class="client-item col-md-6 d-flex mt-5 mt-md-0 ml-md-5">
+                <div class="foto foto-2 mr-5"></div>
+                <blockquote class="blockquote">
+                  <p class="mb-0 text-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Magni in libero consequatur
+                    molestiae, dignissimos explicabo eveniet odit quam repellat
+                    nam facere cum quisquam, provident doloremque error sunt
+                    doloribus, hic nesciunt?
+                  </p>
+                  <hr class="client__blockquote-hr text-left" />
+                  <footer class="blockquote-footer">
+                    Team leader in
+                    <cite title="Atmosphere Company">ATP</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="text-center m-5">
+            <a
+              class="btn btn-outline-success py-3 px-4"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              >click to see more</a
+            >
+            <p class="collapse pt-5" id="collapseExample">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis, molestiae.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--------------------footer-------------------->
+    <footer id="contact" class="text-center p-5">
+      <i class="fa fa-pagelines mr-4 text-success" aria-hidden="true"></i>
+      <p class="col-md-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia porro
+        reiciendis est odio id consequatur temporibus, culpa voluptas blanditiis
+        dicta quis. Aspernatur voluptate ullam officia, saepe sequi voluptatem
+        illum placeat.
+      </p>
+      <address>
+        <p>
+          Anna Kubiak<br />
+          Ptysia 41<br />
+          Wrocław 303<br />
+        </p>
+      </address>
+      <div class="socials d-flex justify-content-center">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+      </div>
+      <hr />
+      <small>thank you for your visit copyright &copy; 2019</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.home--caption', { delay: 800 })
-        ScrollReveal().reveal('#feature .feature-item', { delay: 800 })
-        ScrollReveal().reveal('#client .client-item', { delay: 800 })
-        // ScrollReveal().reveal('.home--caption')
+      ScrollReveal().reveal('.home--caption', { delay: 800 });
+      ScrollReveal().reveal('#feature .feature-item', { delay: 800 });
+      ScrollReveal().reveal('#client .client-item', { delay: 800 });
     </script>
-</body>
-
+  </body>
 </html>

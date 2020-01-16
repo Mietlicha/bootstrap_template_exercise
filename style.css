@@ -1,200 +1,245 @@
-:root{
---main-colour: rgb(53, 181, 240);
---bcg-main-colour:  rgb(37, 37, 37);
-font-size: 14px;
+:root {
+  --main-colour: #0abe28;
+  --bcg-main-colour: rgb(37, 37, 37);
+  --nav-bcg: rgb(10, 10, 10);
+  --text-color-light: rgb(214, 214, 214);
 }
 
-body{
-    position: relative;
-    color: var(--bcg-main-colour);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-section:not(#home)::before{
-    content: "";
-    display: block;
-    height: 4rem;
-    margin-top: -4rem;
+html {
+  font-size: 80%;
+}
+
+body {
+  position: relative;
+  color: var(--bcg-main-colour);
+}
+
+section:not(#home)::before {
+  content: '';
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
 }
 
 /************************NAV******************************************/
 .bg-dark {
-    background-color: #0a0a0a60!important;
+  background-color: var(--nav-bcg) !important;
+  transition: all 1s ease-in-out;
+  opacity: 0.5;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: rgb(255, 255, 255);
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--text-color-light);
 }
 
-.nav-link{
-    padding: 0 7rem;
+.nav-link {
+  padding: 0 7rem;
 }
 
 #main-nav {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-#main-nav .navbar-brand{
-    font-size: 1.5rem;
+#main-nav .navbar-brand {
+  font-size: 1.5rem;
 }
 
-#main-nav .navbar-brand i{
-    color: var(--main-colour);
+#main-nav .navbar-brand i {
+  color: var(--main-colour);
 }
 
-.navbar-dark .navbar-nav .nav-link.active{
-    color: var(--main-colour);
-    font-weight: bold;
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--main-colour);
+  font-weight: bold;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    padding-top: .9rem;
+.navbar-dark .navbar-nav .nav-link {
+  padding-top: 0.9rem;
 }
 
 /************************Home******************************************/
-#home{
-    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/tlo.jpg) center/cover no-repeat;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
+#home {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+    url(img/tlo.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-.home--caption{
-    width: 100%;
-    color: #fff;
-    text-transform: uppercase;
+.home--caption {
+  width: 100%;
+  color: var(--text-color-light);
+  text-transform: uppercase;
+  text-shadow: 0.3rem 0.3rem 0.2rem var(--nav-bcg);
 }
 
-.home--caption h1{
-    font-size: 4rem;
+.home--caption h1 {
+  font-size: 4rem;
 }
 
-.home--caption h1::first-letter, .home--caption h3::first-letter{
-    color: var(--main-colour);
+.home--caption h1::first-letter,
+.home--caption h3::first-letter {
+  color: var(--main-colour);
 }
 
 /************************Course******************************************/
-#course .btn{
-    background-color: var(--main-colour);
+#course .btn {
+  background-color: var(--main-colour);
 }
 
 /************************Feature******************************************/
-#feature hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
+#feature hr {
+  width: 5%;
+  border: 2px solid var(--main-colour);
 }
 
-#feature i{
-    color: var(--main-colour);
-    font-size: 2rem;
+#feature i {
+  color: var(--main-colour);
+  font-size: 2rem;
 }
 
-#feature .feature-item h5{
-    text-transform: uppercase;
+#feature .feature-item h5 {
+  text-transform: uppercase;
 }
 
 /************************Resources******************************************/
-#resources{
-min-height: 70vh;
-background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(img/feature.jpg) no-repeat center / cover;
-background-attachment: fixed;
+#resources {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)),
+    url(img/feature.jpg) no-repeat center / cover;
+  background-attachment: fixed;
 }
 
-#resources .resource--caption{
-    color: #fff;
+#resources .resource--caption {
+  color: #fff;
 }
 
-#resources h5{
-    font-size: 1.5rem;
-    text-transform: uppercase;
+#resources h5 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-#resources i{
-    color: var(--main-colour);
-    font-size: 4rem;
+#resources i {
+  color: var(--main-colour);
+  font-size: 4rem;
 }
 
-#resources hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
+#resources hr {
+  width: 5%;
+  border: 2px solid var(--main-colour);
 }
 
 /************************Clients******************************************/
-.client__main-hr{
-    width: 5%;
-    border: 2px solid var(--main-colour);
+.client__main-hr {
+  width: 5%;
+  border: 2px solid var(--main-colour);
+  margin: 0 auto;
 }
 
-#client .foto{
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-    background-color: var(--main-colour);
+.client-item {
+  max-width: 1000px;
 }
 
-#client blockquote p::before{
-    content: "\f10e ";
-    font-family: FontAwesome;
-    color: var(--main-colour);
-    padding-right: 0.5rem;
+.foto {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(10, 10, 10, 0.5);
 }
 
-.client__blockquote-hr{
-    border: 0.5px solid var(--main-colour);
-    width: 100%;
+.foto-1 {
+  background: url(img/girl.jpg) center/cover;
 }
 
-
-#client blockquote p{
-    font-size: 0.7rem;
+.foto-2 {
+  background: url(img/boy.jpg) center/cover;
 }
 
-#client .btn {
-    background-color: var(--main-colour);
+#client blockquote p::before {
+  content: '\f10e ';
+  font-family: FontAwesome;
+  color: var(--main-colour);
+  padding-right: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 0;
 }
 
-/************************Contact******************************************/
-
-#contact{
-    background-color: var(--bcg-main-colour);
-    color: #fff;
+.client__blockquote-hr {
+  border: 0.5px solid var(--main-colour);
+  width: 100%;
 }
 
-#contact > i{
-    font-size: 4rem;
-    padding-bottom: 0.5rem;
+#client blockquote p {
+  font-size: 0.7rem;
 }
 
-#contact .socials i{
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
+/************************footer/Contact******************************************/
+
+#contact {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+    url(img/tlo.jpg) center/cover no-repeat;
+  color: #fff;
+  margin-top: -2rem;
 }
 
-#contact hr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.75), rgba(0, 0, 0, 0));
+#contact > i {
+  font-size: 4rem;
+  padding-bottom: 0.5rem;
 }
 
-#contact >p{
-    max-width: 700px;
-    margin: 1rem auto;
+#contact .socials i {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
 }
 
-@media (min-width: 500px){
-    :root{
-        font-size: 16px;
-    }
-    }
-    
-    @media (min-width: 768px){
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: .9rem;
-        padding-left: .9rem;
-        padding-top: 0;
-    }
-    }
+#contact hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(253, 253, 253, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#contact > p {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .foto {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
