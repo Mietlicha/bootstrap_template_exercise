@@ -80,40 +80,72 @@
       <!--------------------home-------------------->
       <section id="home">
         <div class="home--caption">
-          <h1>Welcome to botany</h1>
-          <h3>plant science</h3>
+          <h1 class="home--caption-h1">Welcome to botany</h1>
+          <h3 class="home--caption-h3">plant science</h3>
         </div>
       </section>
 
       <!--------------------feature-------------------->
       <section id="feature">
         <div class="jumbotron jumbotron-fluid text-center pt-5">
-          <header><h3 class="text-uppercase">features</h3></header>
-          <hr class="client__main-hr mb-5 mt-3" />
-          <div class="container d-md-flex">
-            <div class="feature-item col-md-4">
-              <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-              <h5 class="pt-3">custom animation</h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                qui autem vitae?
-              </p>
-            </div>
-            <div class="feature-item col-md-4">
-              <i class="fa fa-asterisk" aria-hidden="true"></i>
-              <h5 class="pt-3">custom animation</h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                qui autem vitae?
-              </p>
-            </div>
-            <div class="feature-item col-md-4">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <h5 class="pt-3">custom animation</h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                qui autem vitae?
-              </p>
+          <header>
+            <h3 class="text-uppercase feature-header">features</h3>
+          </header>
+          <hr class="hr mb-5 mt-3" />
+          <div class="container">
+            <div class="card-deck d-block d-lg-flex justify-content-center">
+              <div class="card">
+                <img class="card-img-top" src="img/herbs.jpg" alt="herbs" />
+                <div class="card-body">
+                  <h5 class="card-title">Herbs</h5>
+                  <i class="fa fa-asterisk p-2" aria-hidden="true"></i>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ipsum voluptatem itaque quae quidem rem, hic voluptatibus
+                    molestias tempora magnam debitis, cum molestiae perspiciatis
+                    recu
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">dolor sit amet consectetur</small>
+                  </p>
+                </div>
+              </div>
+              <div class="card special mt-2 mt-lg-0">
+                <img
+                  class="card-img-top"
+                  src="img/oils.jpg"
+                  alt="
+                essential oil"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Oils</h5>
+                  <i class="fa fa-asterisk p-2" aria-hidden="true"></i>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit ametelit. Ipsum voluptatem itaque quae
+                    quidem rem, hic voluptatibus molestias tempora magnam
+                    debitis, cum molestiae perspiciatis recu
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">tempora magnam debitis</small>
+                  </p>
+                </div>
+              </div>
+              <div class="card mt-2 mt-lg-0">
+                <img class="card-img-top" src="img/spices.jpg" alt="spices" />
+                <div class="card-body">
+                  <h5 class="card-title">Spices</h5>
+                  <i class="fa fa-asterisk p-2" aria-hidden="true"></i>
+                  <p class="card-text">
+                    Ipsum voluptatem itaque quae quidem rem, hic voluptatibus
+                    molestias tempora magnam debitis, cum molestiae perspiciatis
+                    recu. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">sit amet consectetur</small>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,9 +188,9 @@
       <!--------------------Client-------------------->
       <section id="client">
         <div class="jumbotron jumbotron-fluid text-center pt-5">
-          <header><h3 class="text-uppercase">Clients</h3></header>
+          <header><h3 class="text-uppercase client-header">Clients</h3></header>
           <div class="client mx-auto">
-            <hr class="client__main-hr mb-5 mt-3" />
+            <hr class="hr mb-5 mt-3" />
             <div class="container py-3 d-md-flex text-center">
               <div class="client-item col-md-6 d-flex">
                 <div class="foto foto-1 mr-5"></div>
@@ -218,7 +250,10 @@
     </main>
     <!--------------------footer-------------------->
     <footer id="contact" class="text-center p-5">
-      <i class="fa fa-pagelines mr-4 text-success" aria-hidden="true"></i>
+      <i
+        class="fa fa-pagelines mr-4 text-success contact-icon"
+        aria-hidden="true"
+      ></i>
       <p class="col-md-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia porro
         reiciendis est odio id consequatur temporibus, culpa voluptas blanditiis
@@ -259,9 +294,14 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-      ScrollReveal().reveal('.home--caption', { delay: 800 });
-      ScrollReveal().reveal('#feature .feature-item', { delay: 800 });
+      ScrollReveal().reveal('.home--caption-h1', { delay: 800 });
+      ScrollReveal().reveal('.home--caption-h3', { delay: 1200 });
+      ScrollReveal().reveal('.feature-header', { delay: 800 });
+      ScrollReveal().reveal('.card', { delay: 900 });
+      ScrollReveal().reveal('.special', { delay: 600 });
       ScrollReveal().reveal('#client .client-item', { delay: 800 });
+      ScrollReveal().reveal('.client-header', { delay: 800 });
+      ScrollReveal().reveal('.contact-icon', { delay: 800 });
     </script>
   </body>
 </html>
