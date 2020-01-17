@@ -58,13 +58,10 @@
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#about">about us</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#feature">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#course">Course</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#resources">Resources</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#client">Clients</a>
@@ -82,6 +79,66 @@
         <div class="home--caption">
           <h1 class="home--caption-h1">Welcome to botany</h1>
           <h3 class="home--caption-h3">plant science</h3>
+        </div>
+      </section>
+
+      <!--------------------about-------------------->
+      <section id="about" class="text-center mt-5 mb-5">
+        <header>
+          <h3 class="text-uppercase about-header">about us</h3>
+        </header>
+        <hr class="hr mb-5 mt-3" />
+        <div class="container-fluid px-0 about__top">
+          <div class="row align-items-center">
+            <div
+              class="col-sm-6 d-none d-sm-block text-center text-white mt-5 about__items"
+            >
+              <h1>health<span>/</span>from<span>/</span>plants</h1>
+              <h1>health<span>/</span>from<span>/</span>plants</h1>
+              <h1>health<span>/</span>from<span>/</span>plants</h1>
+              <h1>health<span>/</span>from<span>/</span>plants</h1>
+              <h1>health<span>/</span>from<span>/</span>plants</h1>
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="img/vegetables.jpg" alt="Proteins" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-5 about__center">
+          <div class="row align-items-center about__center--img">
+            <div class="col-sm-6 px-0">
+              <img src="img/lemon.jpg" class="img-fluid" alt="lemon" />
+            </div>
+            <div
+              class="col-sm-6 text-center text-white px-5 about__center--text"
+            >
+              <h3>Vitamins</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                assumenda praesentium accusantium, deserunt nihil ex modi? Fugit
+                cumque enim eaque consequatur excepturi ullam quasi laborum
+                impedit! Molestias adipisci esse nobis!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+          <div class="row align-items-center">
+            <div class="col-sm-6 px-0 order-2">
+              <img src="img/brocoli.jpg" class="img-fluid" alt="broccoli" />
+            </div>
+            <div class="col-sm-6 text-center px-5 order-1 about__center--text">
+              <h3>Macroelements</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                assumenda praesentium accusantium, deserunt nihil ex modi? Fugit
+                cumque enim eaque consequatur excepturi ullam quasi laborum
+                impedit! Molestias adipisci esse nobis!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -115,7 +172,7 @@
                   class="card-img-top"
                   src="img/oils.jpg"
                   alt="
-                essential oil"
+                  essential oil"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Oils</h5>
@@ -149,39 +206,19 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <!--------------------corse-------------------->
-      <section id="course" class="container text-center mt-5 mb-5">
-        <header><h3>Nuno Theme Advanced Bootstrap Course</h3></header>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-          suscipit, repudiandae
-        </p>
-        <a href="#" class="btn btn-md" target="_blnk">93% off coupon card</a>
-      </section>
-
-      <!--------------------Resourses-------------------->
-      <section id="resources">
-        <div class="resource--caption">
-          <header><h3 class="text-center">Build with care</h3></header>
-          <hr />
-          <div class="container d-md-flex text-center">
-            <div class="resources-item col-md-4">
-              <h5 class="pt-3">Html 5</h5>
-              <i class="fa fa-html5" aria-hidden="true"></i>
-              <p>Lorem ipsum dolor sit,</p>
-            </div>
-            <div class="resources-item col-md-4">
-              <h5 class="pt-3">Bootstrap 4</h5>
-              <i class="fa fa-bold" aria-hidden="true"></i>
-              <p>Lorem ipsum dolor sit,</p>
-            </div>
-            <div class="resources-item col-md-4">
-              <h5 class="pt-3">CSS 3</h5>
-              <i class="fa fa-css3" aria-hidden="true"></i>
-              <p>Lorem ipsum dolor sit,</p>
-            </div>
+        <div id="quota" class="d-flex align-items-center">
+          <div class="container">
+            <blockquote
+              class="blockquote quota-blackquote text-right py-3 px-5 border mx-auto rounded"
+            >
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+              <footer class="blockquote-footer quota-blockquote-footer">
+                John Doe <cite title="Source Title">Bilogist</cite>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </section>
@@ -299,6 +336,7 @@
       ScrollReveal().reveal('.feature-header', { delay: 800 });
       ScrollReveal().reveal('.card', { delay: 900 });
       ScrollReveal().reveal('.special', { delay: 600 });
+      ScrollReveal().reveal('.quota-blackquote', { delay: 800 });
       ScrollReveal().reveal('#client .client-item', { delay: 800 });
       ScrollReveal().reveal('.client-header', { delay: 800 });
       ScrollReveal().reveal('.contact-icon', { delay: 800 });

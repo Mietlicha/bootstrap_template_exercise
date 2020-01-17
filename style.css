@@ -1,9 +1,14 @@
 :root {
   --main-colour: #0abe28;
+  --main-darker: #038624;
+  --main-darker-trnsparent: #03862479;
   --bcg-main-colour: rgb(37, 37, 37);
+  --bcg-main-colour-transparent: rgba(37, 37, 37, 0.555);
   --nav-bcg: rgb(10, 10, 10);
   --text-color-light: rgb(214, 214, 214);
+  --text-color-light-transparent: rgba(214, 214, 214, 0.815);
   --jubmotron: rgb(233, 236, 239);
+  --about: #02b17cb4;
 }
 
 *,
@@ -22,13 +27,13 @@ body {
   position: relative;
   color: var(--bcg-main-colour);
 }
-
+/* 
 section:not(#home)::before {
   content: '';
   display: block;
   height: 4rem;
   margin-top: -4rem;
-}
+} */
 
 /************************NAV******************************************/
 .bg-dark {
@@ -94,9 +99,45 @@ section:not(#home)::before {
   color: var(--main-colour);
 }
 
-/************************Course******************************************/
-#course .btn {
-  background-color: var(--main-colour);
+/************************about******************************************/
+#about {
+  background: linear-gradient(
+    107.42295983054794deg,
+    rgba(0, 226, 123, 1) 5.911420204978038%,
+    rgba(0, 166, 190, 1) 95.95534407027817%
+  );
+}
+
+#about span {
+  color: var(--main-darker);
+}
+
+.about__items h1 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.about__center--img {
+  order: 1;
+}
+
+.about__center--text {
+  order: -1;
+  color: var(--main-darker);
+}
+
+.about__center--text img {
+  width: 20%;
+  margin: auto;
+}
+
+.about__center--text p {
+  font-size: 0.8rem;
+}
+
+#about .lead,
+#about h3 {
+  color: var(--main-darker);
 }
 
 /************************Feature******************************************/
@@ -104,8 +145,10 @@ section:not(#home)::before {
   background: linear-gradient(
     to right bottom,
     var(--jubmotron),
-    rgb(51, 185, 141, 0.4)
+    rgb(51, 185, 141, 0.6)
   );
+  margin-bottom: 0;
+  padding-bottom: 8rem;
 }
 
 #feature i {
@@ -127,31 +170,22 @@ section:not(#home)::before {
   color: var(--bcg-main-colour);
 }
 
-/************************Resources******************************************/
-#resources {
-  min-height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)),
-    url(img/feature.jpg) no-repeat center / cover;
+#quota {
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.3)),
+    url(img/salvia.jpg) no-repeat center / cover;
   background-attachment: fixed;
+  color: var(--text-color-light);
 }
 
-#resources .resource--caption {
-  color: #fff;
+.quota-blackquote {
+  max-width: 500px;
+  border: 3px solid var(--text-color-light) !important;
+  background: var(--bcg-main-colour-transparent);
 }
 
-#resources h5 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-#resources i {
-  color: var(--main-colour);
-  font-size: 4rem;
-}
-
-#resources hr {
-  width: 5%;
-  border: 2px solid var(--main-colour);
+.quota-blockquote-footer {
+  color: var(--text-color-light-transparent);
 }
 
 /************************Clients******************************************/
@@ -233,9 +267,15 @@ section:not(#home)::before {
 /*..........................................*/
 .hr {
   width: 5%;
-  border: 2px solid var(--main-colour);
+  border: 2px solid var(--main-darker);
   margin-left: auto;
   margin-right: auto;
+}
+
+header h3 {
+  font-size: 3rem;
+  color: var(--main-colour);
+  font-weight: lighter;
 }
 
 @media (min-width: 500px) {
@@ -244,11 +284,31 @@ section:not(#home)::before {
   }
 }
 
+@media (min-width: 576px) {
+  .about__center--img {
+    order: 0;
+  }
+
+  .about__center--text {
+    order: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.9rem;
     padding-left: 0.9rem;
     padding-top: 0;
+  }
+
+  .about__center--text p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .about__items h1 {
+    font-size: 3rem;
   }
 }
 
@@ -270,3 +330,9 @@ section:not(#home)::before {
     max-width: 320px;
   }
 }
+
+/* @media (min-width: 780px) {
+  .about__center--text p {
+    font-size: 1rem;
+  }
+} */
