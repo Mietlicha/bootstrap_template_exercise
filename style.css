@@ -27,6 +27,7 @@ html {
 body {
   position: relative;
   color: var(--bcg-main-colour);
+  overflow-x: hidden;
 }
 
 /************************NAV******************************************/
@@ -63,6 +64,10 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
   padding-top: 0.9rem;
+}
+
+#main-nav > button {
+  margin-right: 1rem;
 }
 
 /************************Home******************************************/
@@ -275,6 +280,19 @@ header h3 {
   font-size: 3rem;
   color: var(--main-colour);
   font-weight: lighter;
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  margin-top: -4rem;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 500px) {
