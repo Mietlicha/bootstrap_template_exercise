@@ -1,6 +1,7 @@
 :root {
   --main-colour: #0abe28;
   --main-darker: #038624;
+  --main-light: rgb(114, 248, 4);
   --main-darker-trnsparent: #03862479;
   --bcg-main-colour: rgb(37, 37, 37);
   --bcg-main-colour-transparent: rgba(37, 37, 37, 0.555);
@@ -27,13 +28,6 @@ body {
   position: relative;
   color: var(--bcg-main-colour);
 }
-/* 
-section:not(#home)::before {
-  content: '';
-  display: block;
-  height: 4rem;
-  margin-top: -4rem;
-} */
 
 /************************NAV******************************************/
 .bg-dark {
@@ -54,7 +48,7 @@ section:not(#home)::before {
   text-transform: uppercase;
 }
 
-#main-nav .navbar-brand {
+.navbar-brand {
   font-size: 1.5rem;
 }
 
@@ -101,20 +95,18 @@ section:not(#home)::before {
 
 /************************about******************************************/
 #about {
-  background: linear-gradient(
-    107.42295983054794deg,
-    rgba(0, 226, 123, 1) 5.911420204978038%,
-    rgba(0, 166, 190, 1) 95.95534407027817%
-  );
+  background: var(--jubmotron);
 }
 
 #about span {
-  color: var(--main-darker);
+  color: var(--main-light);
+  font-weight: bolder;
 }
 
 .about__items h1 {
   font-weight: 100;
   font-size: 2rem;
+  color: var(--main-colour);
 }
 
 .about__center--img {
@@ -131,13 +123,20 @@ section:not(#home)::before {
   margin: auto;
 }
 
+.about-img {
+  box-shadow: 0.5rem 0.5rem 1rem rgba(10, 10, 10, 0.3);
+}
+
 .about__center--text p {
   font-size: 0.8rem;
 }
 
-#about .lead,
-#about h3 {
+#about .lead {
   color: var(--main-darker);
+}
+
+.green {
+  color: var(--main-colour);
 }
 
 /************************Feature******************************************/
@@ -267,7 +266,7 @@ section:not(#home)::before {
 /*..........................................*/
 .hr {
   width: 5%;
-  border: 2px solid var(--main-darker);
+  border: 2px solid var(--main-light);
   margin-left: auto;
   margin-right: auto;
 }
@@ -330,9 +329,3 @@ header h3 {
     max-width: 320px;
   }
 }
-
-/* @media (min-width: 780px) {
-  .about__center--text p {
-    font-size: 1rem;
-  }
-} */

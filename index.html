@@ -83,7 +83,7 @@
       </section>
 
       <!--------------------about-------------------->
-      <section id="about" class="text-center mt-5 mb-5">
+      <section id="about" class="text-center py-5">
         <header>
           <h3 class="text-uppercase about-header">about us</h3>
         </header>
@@ -100,7 +100,11 @@
               <h1>health<span>/</span>from<span>/</span>plants</h1>
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid" src="img/vegetables.jpg" alt="Proteins" />
+              <img
+                class="img-fluid about-img"
+                src="img/vegetables.jpg"
+                alt="lettuce"
+              />
             </div>
           </div>
         </div>
@@ -108,12 +112,16 @@
         <div class="container-fluid mt-5 about__center">
           <div class="row align-items-center about__center--img">
             <div class="col-sm-6 px-0">
-              <img src="img/lemon.jpg" class="img-fluid" alt="lemon" />
+              <img
+                src="img/lemon.jpg"
+                class="img-fluid about-img"
+                alt="lemons"
+              />
             </div>
             <div
               class="col-sm-6 text-center text-white px-5 about__center--text"
             >
-              <h3>Vitamins</h3>
+              <h3 class="text-uppercase green">Vitamins</h3>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 assumenda praesentium accusantium, deserunt nihil ex modi? Fugit
@@ -127,10 +135,14 @@
         <div class="container-fluid mt-5">
           <div class="row align-items-center">
             <div class="col-sm-6 px-0 order-2">
-              <img src="img/brocoli.jpg" class="img-fluid" alt="broccoli" />
+              <img
+                src="img/brocoli.jpg"
+                class="img-fluid about-img"
+                alt=" jerbs leaves"
+              />
             </div>
             <div class="col-sm-6 text-center px-5 order-1 about__center--text">
-              <h3>Macroelements</h3>
+              <h3 class="text-uppercase green">Macroelements</h3>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 assumenda praesentium accusantium, deserunt nihil ex modi? Fugit
@@ -331,10 +343,11 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-      ScrollReveal().reveal('.home--caption-h1', { delay: 800 });
+      ScrollReveal().reveal('.home--caption-h1', { delay: 600 });
       ScrollReveal().reveal('.home--caption-h3', { delay: 1200 });
+      ScrollReveal().reveal('.about-header', { delay: 1200 });
       ScrollReveal().reveal('.feature-header', { delay: 800 });
-      ScrollReveal().reveal('.card', { delay: 900 });
+      ScrollReveal().reveal('.card', { delay: 1100 });
       ScrollReveal().reveal('.special', { delay: 600 });
       ScrollReveal().reveal('.quota-blackquote', { delay: 800 });
       ScrollReveal().reveal('#client .client-item', { delay: 800 });
