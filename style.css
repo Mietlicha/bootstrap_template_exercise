@@ -2,8 +2,7 @@
   --main-colour: #0abe28;
   --main-darker: #038624;
   --main-light: rgb(114, 248, 4);
-  --main-darker-trnsparent: #03862479;
-  --bcg-main-colour: rgb(37, 37, 37);
+   --bcg-main-colour: rgb(37, 37, 37);
   --bcg-main-colour-transparent: rgba(37, 37, 37, 0.555);
   --nav-bcg: rgb(10, 10, 10);
   --text-color-light: rgb(214, 214, 214);
@@ -93,9 +92,28 @@ body {
   font-size: 4rem;
 }
 
+.home--caption h3,
+.home--caption h1{
+  opacity: 0;
+ }
+
+ .home--caption h1{
+  animation: appear 2s 0.2s forwards;
+}
+
+ .home--caption h3{
+   animation: appear 2s 1s forwards;
+ }
+
+ @keyframes appear{
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+ }
+
 .home--caption h1::first-letter,
 .home--caption h3::first-letter {
   color: var(--main-colour);
+  
 }
 
 /************************about******************************************/
@@ -238,7 +256,7 @@ body {
 #contact {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
     url(img/tlo.jpg) center/cover no-repeat;
-  color: #fff;
+  color: var(--jubmotron);
   margin-top: -2rem;
 }
 
